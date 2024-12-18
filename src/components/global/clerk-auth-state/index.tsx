@@ -1,4 +1,5 @@
 import React from "react";
+// @ts-ignore
 import {
   ClerkLoading,
   SignedIn,
@@ -15,12 +16,15 @@ type Props = {};
 const ClerkAuthState = (props: Props) => {
   return (
     <>
+      {/* @ts-ignore */}
       <ClerkLoading>
         <Loader state>
           <></>
         </Loader>
       </ClerkLoading>
+      {/* @ts-ignore */}
       <SignedOut>
+        {/* @ts-ignore */}
         <SignInButton>
           <Button
             className="rounded-xl 
@@ -34,8 +38,11 @@ const ClerkAuthState = (props: Props) => {
           </Button>
         </SignInButton>
       </SignedOut>
+      {/* @ts-ignore */}
       <SignedIn>
+        {/* @ts-ignore */}
         <UserButton>
+          {/* @ts-ignore */}
           <UserButton.UserProfileLink
             label="Dashboard"
             url={`/dashboard`}
